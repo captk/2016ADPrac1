@@ -19,14 +19,23 @@ public class Practical1 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner in = new Scanner(System.in);
-        String msg1, msg2, msg3;
-        System.out.println("Enter a line");
-        msg1 = in.nextLine();
-        System.out.println("Enter another line");
-        msg2 = in.nextLine();
-        System.out.println("Enter the last line");
-        msg3 = in.nextLine();
-        System.out.println(msg3 + "," + msg2 + "," + msg1);
+        Line msg1, msg2, msg3;
+        int lineNum = 1;
+        
+        System.out.println(lineNum + ": Enter a line");
+        msg1 = new Line(in.nextLine(), lineNum);
+        lineNum++;
+
+        System.out.println(lineNum + ": Enter another line");
+        msg2 = new Line(in.nextLine(), lineNum);
+        lineNum++;
+
+        System.out.println(lineNum + ": Enter the last line");
+        msg3 = new Line(in.nextLine(), lineNum);
+        lineNum++;
+
+        System.out.println(msg3.getLineOfTextPretty() + "," + msg2.getLineOfTextPretty()
+                + "," + msg1.getLineOfTextPretty());
     }
 
 }
