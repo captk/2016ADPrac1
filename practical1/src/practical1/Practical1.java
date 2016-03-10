@@ -25,23 +25,27 @@ public class Practical1 {
     public static void main(String[] args) {
         // TODO code application logic here
 
+        //ask for lines until empty line
         while (moreLines) {
             askForLines();
             addNewLine();
             //System.out.println("while loop continues");
 
         }
-
+        
+        //print lines in reverse
         for (int i = lineList.size(); i > 0; i--) {
             System.out.println(lineList.get(i - 1).getLineOfTextPretty());
         }
 
     }
 
+    //i don't even
     private static void askForLines() {
         System.out.println(lineNum + ": Enter a line");
     }
 
+    //add line into list
     private static void addNewLine() {
         String line = in.nextLine();
 
