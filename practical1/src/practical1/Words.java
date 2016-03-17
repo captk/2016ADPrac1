@@ -27,6 +27,8 @@ public class Words {
         //sort the list
         ws.jesusSort();
         JOptionPane.showMessageDialog(null, "Word list = " + ws.toString());
+        JOptionPane.showMessageDialog(null, "Average length = " 
+                + ws.averageLength());
         JOptionPane.showMessageDialog(null, "First word = " + ws.getFirst());
         JOptionPane.showMessageDialog(null, "Last word = " + ws.getLast());
     }

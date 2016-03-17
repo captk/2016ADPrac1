@@ -70,6 +70,22 @@ public class WordList {
         theWordList.sort(jesus);
     }
     
+    //Task 8, jesus can't help me now...
+    public double averageLength(){
+        double sum = 0;
+        int count = 0;      
+        
+        for (String str: theWordList){
+            sum = sum + str.length();
+            count++;
+        }
+        
+        if (sum == 0){
+            return 0;
+        }
+        else return sum/count;
+    }
+    
     public String toString() {
         return theWordList.toString();
     }
