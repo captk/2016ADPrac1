@@ -10,7 +10,9 @@ package practical1;
  * @author k
  */
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.text.Collator;
+import java.util.Collections;
 
 public class WordList {
 
@@ -84,6 +86,17 @@ public class WordList {
             return 0;
         }
         else return sum/count;
+    }
+    
+    public void lengthSort(){
+        Comparator lengthComparer = 
+                Comparator.comparingInt(new stringLengthExtractor());
+        
+        Collections.sort(theWordList, lengthComparer);
+        
+        for (String s: theWordList){
+            System.out.println(s);
+        }
     }
     
     public String toString() {
