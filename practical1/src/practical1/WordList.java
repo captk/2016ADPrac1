@@ -10,6 +10,7 @@ package practical1;
  * @author k
  */
 import java.util.ArrayList;
+import java.text.Collator;
 
 public class WordList {
 
@@ -58,7 +59,17 @@ public class WordList {
         }
         
     }
-
+    
+    //Task 7, lets do it!
+    public void jesusSort(){
+        
+        //need something that implements the Comparator interface
+        Collator jesus = Collator.getInstance();
+        
+        //let jesus do our sorting
+        theWordList.sort(jesus);
+    }
+    
     public String toString() {
         return theWordList.toString();
     }

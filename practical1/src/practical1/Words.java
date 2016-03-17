@@ -24,6 +24,9 @@ public class Words {
             }
         } while (in != null);
         JOptionPane.showMessageDialog(null, "Word list = " + ws.toString());
+        //sort the list
+        ws.jesusSort();
+        JOptionPane.showMessageDialog(null, "Word list = " + ws.toString());
         JOptionPane.showMessageDialog(null, "First word = " + ws.getFirst());
         JOptionPane.showMessageDialog(null, "Last word = " + ws.getLast());
     }
