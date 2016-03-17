@@ -15,7 +15,7 @@ public class stringLengthExtractor implements ToIntFunction {
 
     @Override
     public int applyAsInt(Object value) {
-        System.out.println("stringLengthExtractor is called");
+        //System.out.println("stringLengthExtractor is called");
         return ((String)value).length();
     }
     

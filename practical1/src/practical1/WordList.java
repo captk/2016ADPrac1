@@ -94,9 +94,9 @@ public class WordList {
         
         Collections.sort(theWordList, lengthComparer);
         
-        for (String s: theWordList){
+        /*for (String s: theWordList){
             System.out.println(s);
-        }
+        }*/
     }
     
     public String toString() {
