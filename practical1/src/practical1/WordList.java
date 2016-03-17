@@ -29,7 +29,12 @@ public class WordList {
 * If there is no first word (theWordList has no words in it),
 * "-" should be returned.
          */
-        return "junk";
+        if (theWordList.isEmpty()){
+            return "-";
+        }
+        else{
+            return theWordList.get(0);
+        }
     }
 
     /* Check point 
@@ -45,7 +50,13 @@ public class WordList {
 -
 " should be returned.
          */
-        return "junk";
+        if (theWordList.isEmpty()){
+            return "-";
+        }
+        else{
+            return theWordList.get(theWordList.size() - 1);
+        }
+        
     }
 
     public String toString() {
